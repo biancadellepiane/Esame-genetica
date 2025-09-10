@@ -35,6 +35,7 @@ class DAO():
             query = """select c.*
                         from classification c 
                         where c.Localization = %s"""
+
             cursor.execute(query,(localization,))
 
             for row in cursor:

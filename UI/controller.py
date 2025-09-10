@@ -34,8 +34,8 @@ class Controller:
 
 
 
-        sortedEdges = self._model.getEdges()
-        for e in sortedEdges:
+        edges = self._model.getEdges()
+        for e in edges:
             self._view.txt_result.controls.append(ft.Text(f"{e[0].GeneID} <--> {e[1].GeneID} : peso {e[2]['weight']}"))
 
         self._view.update_page()
